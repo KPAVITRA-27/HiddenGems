@@ -16,12 +16,14 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #000428, #004e92);
+            background-image: url("https://authindia.com/wp-content/uploads/2023/10/Indian-pottery-crafts2-1600x900.jpg");
+            background-repeat: no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             color: #fff;
+            background-size: cover;
         }
 
         .container {
@@ -38,7 +40,7 @@
             text-align: center;
             font-family: 'Playfair Display', serif;
             margin-bottom: 20px;
-            color: #ffd700;
+            color:black;
             font-size: 28px;
             letter-spacing: 1px;
         }
@@ -52,23 +54,23 @@
             padding: 12px;
             margin: 10px 0;
             border-radius: 8px;
-            border: 2px solid #ffd700;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #fff;
+            border: 2px solid black;
+            background-color:white;
+            color: black;
             outline: none;
             font-size: 16px;
             transition: border-color 0.3s ease;
         }
 
-        input:focus {
+        /*input:focus {
             border-color: #fff;
-        }
+        }*/
 
         .login-btn, .register-btn {
             padding: 12px;
             margin-top: 15px;
-            background-color: #ffd700;
-            color: #000;
+            background-color: black;
+            color: white;
             font-weight: bold;
             font-size: 16px;
             cursor: pointer;
@@ -78,14 +80,14 @@
         }
 
         .login-btn:hover, .register-btn:hover {
-            background-color: #ffc107;
+            background-color: black;
         }
 
         .switch-btn {
             text-align: center;
             margin-top: 15px;
             cursor: pointer;
-            color: #ffd700;
+            color: black;
         }
 
         .hidden {
@@ -122,7 +124,7 @@
 
     <!-- Registration Form -->
     <div id="register-form" class="hidden">
-        <h2>User Registration</h2>
+        <h2><b>User Registration</b></h2>
         <form action="/user/register" method="POST" id="registerForm">
             <label class="form-title" for="register-username">Username</label>
             <input type="text" id="register-username" name="user_username" placeholder="Choose a username" required>
@@ -141,6 +143,12 @@
 
             <label class="form-title" for="register-location">Location</label>
             <input type="text" id="register-location" name="location" placeholder="Enter your location" required>
+
+            <label class="form-title" for="register-Work-details">Work Details</label>
+            <input type="text" id="register-Work-details" name="Work Details" placeholder="Work Details" required>
+
+            <label class="form-title" for="register-Work Type">Work Type</label>
+            <input type="text" id="register-Work Type" name="Work Type" placeholder="Work Type" required>
 
             <button type="submit" class="register-btn">Register</button>
         </form>
