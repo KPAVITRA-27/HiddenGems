@@ -14,17 +14,19 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            background-image: url("https://authindia.com/wp-content/uploads/2023/10/Indian-pottery-crafts2-1600x900.jpg");
+            background-repeat: no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             color: #fff;
+            background-size: cover;
         }
 
         .container {
             width: 400px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color:rgba(255, 255, 255, 0.1);
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
@@ -36,7 +38,7 @@
             text-align: center;
             font-family: 'Playfair Display', serif;
             margin-bottom: 20px;
-            color: #ffd700;
+            color:black;
             font-size: 28px;
             letter-spacing: 1px;
         }
@@ -51,8 +53,8 @@
             margin: 10px 0;
             border-radius: 8px;
             border: 2px solid #ffd700;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #fff;
+            background-color:black;
+            color: white;
             outline: none;
             font-size: 16px;
             transition: border-color 0.3s ease;
@@ -65,8 +67,8 @@
         .login-btn, .register-btn {
             padding: 12px;
             margin-top: 15px;
-            background-color: #ffd700;
-            color: #000;
+            background-color: black;
+            color: white;
             font-weight: bold;
             font-size: 16px;
             cursor: pointer;
@@ -83,7 +85,7 @@
             text-align: center;
             margin-top: 15px;
             cursor: pointer;
-            color: #ffd700;
+            color: black;
         }
 
         .hidden {
@@ -116,7 +118,7 @@
             border-radius: 4px;
             border: 1px solid #ffd700;
             background-color: rgba(255, 255, 255, 0.1);
-            color: #fff;
+            color: black;
         }
 
         .notification-icon {
@@ -133,7 +135,7 @@
         }
 
         .artisan-box {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color:black;
             border-radius: 8px;
             padding: 15px;
             margin: 10px;
@@ -196,8 +198,8 @@
             <label for="register-work-type">Work Type</label>
             <input type="text" id="register-work-type" name="work_type" placeholder="Enter your work type" required>
 
-            <label for="register-contact-number">Contact Number</label>
-            <input type="text" id="register-contact-number" name="contact_number" placeholder="Enter your contact number" required>
+            <label for="register-work-details">Work Details</label>
+            <input type="text" id="register-Details" name="Work Details" placeholder="Work Details" required>
 
             <button type="submit" class="register-btn">Register</button>
         </form>
